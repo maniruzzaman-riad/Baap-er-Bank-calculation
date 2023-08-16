@@ -36,3 +36,15 @@ document.getElementById('deposite-btn').addEventListener('click', function(){
     setDepositeAmount('Last-Deposite',depositeAmount)
 
 })
+
+document.getElementById('Withdraw-btn').addEventListener('click',function(){
+    const withdrawFild = getInputData('Withdraw-field');
+    const previousWithdraw = getPreviusData('Withdraw');
+    const totalWithdraw = withdrawFild + previousWithdraw;
+    const totalPreviaceBalance = getPreviusData('Total-Balance');
+    const totalFinalBalance = totalPreviaceBalance - withdrawFild;
+
+    setDepositeAmount('Withdraw',totalWithdraw);
+    setDepositeAmount('Total-Balance',totalFinalBalance);
+    setDepositeAmount('Last-Withdraw',withdrawFild);
+})
