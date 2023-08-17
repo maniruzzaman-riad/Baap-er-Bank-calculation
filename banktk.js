@@ -24,8 +24,8 @@ function setDepositeAmount(previousData, newTotal) {
 
 document.getElementById('deposite-btn').addEventListener('click', function () {
     const depositeAmount = getInputData('deposite-field');
-    if (isNaN(depositeAmount)) {
-        alert('please input any amount')
+    if (isNaN(depositeAmount) || depositeAmount < 0) {
+        alert('please input any positive amount')
     } else {
         const oldDepositeAmount = getPreviusData('deposite');
         const totalDepositeAmount = depositeAmount + oldDepositeAmount;
@@ -44,8 +44,8 @@ document.getElementById('deposite-btn').addEventListener('click', function () {
 
 document.getElementById('Withdraw-btn').addEventListener('click', function () {
     const withdrawFild = getInputData('Withdraw-field');
-    if (isNaN(withdrawFild)) {
-        alert('please input any amount')
+    if (isNaN(withdrawFild) || withdrawFild < 0){
+        alert('please input any positive amount')
     } else {
         const previousWithdraw = getPreviusData('Withdraw');
         const totalWithdraw = withdrawFild + previousWithdraw;
