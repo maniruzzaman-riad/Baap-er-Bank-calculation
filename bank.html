@@ -13,7 +13,7 @@
         <div class="">
             <h1 class="text-center text-4xl font-bold text-sky-950 mb-6">Let's See My <span
                     class="text-5xl font-bold text-violet-700">Bank Balance</span></h1>
-            <div class="w-3/4 mx-auto grid grid-cols-3 gap-5">
+            <div class="w-3/4 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5">
                 <div class="text-white bg-green-500 p-8 rounded-xl">
                     <h4 class="text-3xl">Deposite</h4>
                     <h2 class="text-5xl">$<span id="deposite">00</span></h2>
@@ -42,18 +42,18 @@
     </section>
     <!-- ------------withdraw and deposite section-------------- -->
     <section>
-        <div class="w-3/4 mx-auto grid grid-cols-2 gap-5 mt-7">
+        <div class="w-3/4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 mt-7">
             <div class="text-white bg-sky-500 p-8 rounded-xl">
                 <h4 class="text-3xl">Please Deposite</h4>
-                <input class="text-black w-3/4 px-4 py-1 rounded-xl mt-7" type="number" name="" id="deposite-field"
+                <input class="text-black w-full lg:w-3/4 px-4 py-1 rounded-xl mt-7" type="number" name="" id="deposite-field"
                     placeholder="$ Amount you want deposite">
                 <br>
                 <button id="deposite-btn" class="mt-3 bg-purple-500 px-5 py-1 rounded-3xl">Deposite</button>
             </div>
             <div class="text-white bg-blue-400 p-8 rounded-xl">
                 <h4 class="text-3xl">Please Withdraw</h4>
-                <input class="text-black w-3/4 px-4 py-1 rounded-xl mt-7" type="number" name="" id="Withdraw-field"
-                    placeholder="$ Amount you want deposite">
+                <input class="text-black w-full lg:w-3/4 px-4 py-1 rounded-xl mt-7" type="number" name="" id="Withdraw-field"
+                    placeholder="$ Amount you want Withdraw">
                 <br>
                 <button id="Withdraw-btn" class="mt-3 bg-purple-500 px-5 py-1 rounded-3xl">Deposite</button>
             </div>
