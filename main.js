@@ -3,7 +3,9 @@ document.getElementById('login-btn').addEventListener('click',function(){
     const password =passwordFild.value;
     const emailfild = document.getElementById('email-fild');
     const email = emailfild.value;
-    console.log(password.length);
+
+    passwordFild.value = '';
+    emailfild.value = '';
 
     if(email.endsWith('@gmail.com') && password.length === 6){
         window.location.href = 'bank.html';
