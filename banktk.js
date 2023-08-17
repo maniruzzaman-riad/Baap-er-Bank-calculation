@@ -3,26 +3,12 @@ function getInputData(inputData) {
     const inputTaka = parseFloat(inputfield.value);
     inputfield.value = '';
     return inputTaka;
-    // console.log(inputTaka)
-    // if(isNaN(inputfield)){
-    //     alert("please type any amount")
-    //     return ;
-    // }else{
-    //     return inputTaka;
-    // }
 
 }
 
 function getPreviusData(previusData) {
     const previousAmount = document.getElementById(previusData);
     const previousTaka = parseFloat(previousAmount.innerText);
-    // const notNaN = isNaN(previousTaka);
-    // console.log(notNaN);
-    //     alert("please type any amount")
-    // }
-    // else{
-    //        
-    // }
     return previousTaka;
 
 }
@@ -34,10 +20,7 @@ function setDepositeAmount(previousData, newTotal) {
 }
 
 
-
-
-
-
+// ---------------Deposite section handler ---------------
 
 document.getElementById('deposite-btn').addEventListener('click', function () {
     const depositeAmount = getInputData('deposite-field');
@@ -56,6 +39,8 @@ document.getElementById('deposite-btn').addEventListener('click', function () {
     }
 
 })
+
+// -----------withdraw section handler----------------
 
 document.getElementById('Withdraw-btn').addEventListener('click', function () {
     const withdrawFild = getInputData('Withdraw-field');
@@ -80,4 +65,8 @@ document.getElementById('Withdraw-btn').addEventListener('click', function () {
 
         
     }
+})
+// -------Safely logout button -----------------------
+document.getElementById('logout-btn').addEventListener('click',function(){
+    window.location.href = 'index.html'
 })
